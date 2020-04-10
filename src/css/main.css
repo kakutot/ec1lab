@@ -1,0 +1,55 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    --border-radius-common: 16px;
+    --main-bg-color: white;
+    --main-txt-color: cadetblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.app {
+    line-height: 1.6;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15vh auto;
+}
+
+.btn {
+    opacity: 0.8;
+    outline: none;
+    margin: 0 0.5em;
+    background: rgba(100,8,300,1);
+    border: none;
+    border-radius: .2em;
+    padding: .2em .4em;
+    color: #e8eeef;
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+.btn:disabled{
+   opacity: 0.1;
+   background: red;
+}
+
+.btn:not(:disabled):hover {
+    opacity: 1;
+}
+
+.name {
+    text-align: center;
+}
